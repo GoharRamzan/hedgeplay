@@ -51,7 +51,7 @@ const ProductGallery = () => {
         <div className='fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center'>
           <div className='relative max-w-3xl w-full p-4'>
             <button
-              className='absolute top-2 right-4 text-white text-2xl'
+              className='absolute top-0 right-2 cursor-pointer text-white bg-[#1C52CB] rounded-3xl px-4 text-3xl'
               onClick={closeModal}
             >
               ✕
@@ -63,13 +63,13 @@ const ProductGallery = () => {
             />
             <div className='flex justify-between mt-4'>
               <button
-                className='text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-600'
+                className='text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 cursor-pointer'
                 onClick={prevImage}
               >
                 ← Prev
               </button>
               <button
-                className='text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-600'
+                className='text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 cursor-pointer'
                 onClick={nextImage}
               >
                 Next →
