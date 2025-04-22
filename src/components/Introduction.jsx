@@ -3,7 +3,7 @@ import image from '../assets/intro.png'
 import '../styles/style.css'
 const Introduction = () => {
     return (
-        <div className='bg-[#D3D6DD] h-full flex flex-col items-center w-full overflow-hidden'>
+        <div className='bg-[#a9a9b9] h-full flex flex-col items-center w-full overflow-hidden'>
             <h1 className='bg-[#1C52CB] text-white font-bold h-12 mb-10   px-4 text-2xl flex items-center justify-center mt-7 rounded-3xl'>INTRODUCTION</h1>
             <div className='flex justify-between items-center w-full h-full'>
                 <div className='w-full md:w-[50%]  flex justify-center items-center text-lg'>

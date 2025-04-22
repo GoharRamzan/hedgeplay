@@ -10,8 +10,17 @@ const Navbar = () => {
     };
     return (
         <div className='flex fixed top-0 left-0 z-50 w-full  h-[25vh]  items-center justify-between    text-white'>
-            <div className='h-full w-[100%] md:w-[20%] flex items-center justify-center '>
-                <img src={logo} alt="Logo" className='h-24 ml-4 md:h-36' />
+            <div className=' h-20 md:h-28 lg:h-2/3 w-[100%] md:w-[20%] lg:w-[10%] lg:ml-14 flex items-center justify-center backdrop-blur-md bg-white/10 border border-white/30 rounded-full p-4 shadow-lg '>
+                <img src={logo} alt="Logo" className='h-20 ml-4 md:ml-0 lg:ml-0 md:h-24' />
+                <>
+                    {/* Hamburger Menu Icon */}
+                    <div className="mr-3 md:hidden flex items-center justify-center">
+                        <button onClick={toggleDrawer}>
+                            <HiMenu className="text-white text-3xl" />
+                        </button>
+                    </div>
+
+                </>
             </div>
             <div className='hidden md:flex w-[75%] h-full  ml-11 items-center space-x-6 text-lg '>
                 <span an className='h-6/12 w-[80%] rounded-4xl space-x-12  flex  items-center  bg-white '
@@ -29,13 +38,6 @@ const Navbar = () => {
 
             {/* mobile design */}
             <>
-                {/* Hamburger Menu Icon */}
-                <div className="mr-3 md:hidden flex items-center justify-center">
-                    <button onClick={toggleDrawer}>
-                        <HiMenu className="text-white text-3xl" />
-                    </button>
-                </div>
-
                 {/* Mobile Drawer */}
                 <div
                     className={`fixed top-0 right-0 z-40 w-64 bg-[#1A325E] h-full transition-transform duration-300 transform ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
@@ -44,7 +46,7 @@ const Navbar = () => {
                     <div className="flex flex-col items-center mt-20 space-y-6">
                         <Link
                             to="/"
-                           className='w-[80%] h-14 rounded-3xl bg-amber-600 flex items-center justify-center hover:bg-amber-800 transition duration-200'
+                            className='w-[80%] h-14 rounded-3xl bg-amber-600 flex items-center justify-center hover:bg-amber-800 transition duration-200'
                             onClick={toggleDrawer}
                         >
                             Home
