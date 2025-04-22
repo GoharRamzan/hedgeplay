@@ -1,0 +1,82 @@
+import React, { useState } from 'react';
+import logo from '../assets/hedgelogo.png';
+import { Link } from 'react-router-dom';
+import { HiMenu } from 'react-icons/hi';
+const Navbar = () => {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const toggleDrawer = () => {
+        setIsDrawerOpen(!isDrawerOpen);
+    };
+    return (
+        <div className='flex fixed top-0 left-0 z-50 w-full  h-[25vh]  items-center justify-between    text-white'>
+            <div className='h-full w-[100%] md:w-[20%] flex items-center justify-center '>
+                <img src={logo} alt="Logo" className='h-24 ml-4 md:h-36' />
+            </div>
+            <div className='hidden md:flex w-[75%] h-full  ml-11 items-center space-x-6 text-lg '>
+                <span an className='h-6/12 w-[80%] rounded-4xl space-x-12  flex  items-center  bg-white '
+                    style={{ boxShadow: '10px 10px 3px rgb(106, 106, 107)' }}
+                >
+
+                    <Link to="/" className='w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200 ml-16'>Home</Link>
+                    <Link to="/about" className='w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'>About</Link>
+                    <Link to="/contact" className='w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'> Contact </Link>
+                    <Link to="/contact" className='w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'> Articles </Link>
+
+                </span>
+
+            </div>
+
+            {/* mobile design */}
+            <>
+                {/* Hamburger Menu Icon */}
+                <div className="mr-3 md:hidden flex items-center justify-center">
+                    <button onClick={toggleDrawer}>
+                        <HiMenu className="text-white text-3xl" />
+                    </button>
+                </div>
+
+                {/* Mobile Drawer */}
+                <div
+                    className={`fixed top-0 right-0 z-40 w-64 bg-[#1A325E] h-full transition-transform duration-300 transform ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+                        }`}
+                >
+                    <div className="flex flex-col items-center mt-20 space-y-6">
+                        <Link
+                            to="/"
+                           className='w-[80%] h-14 rounded-3xl bg-amber-600 flex items-center justify-center hover:bg-amber-800 transition duration-200'
+                            onClick={toggleDrawer}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            to="/about"
+                            className='w-[80%] h-14 rounded-3xl bg-amber-600 flex items-center justify-center hover:bg-amber-800 transition duration-200'
+                            onClick={toggleDrawer}
+                        >
+                            About
+                        </Link>
+                        <Link
+                            to="/contact"
+                            className='w-[80%] h-14 rounded-3xl bg-amber-600 flex items-center justify-center hover:bg-amber-800 transition duration-200'
+                            onClick={toggleDrawer}
+                        >
+                            Contact
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Overlay */}
+                <div
+                    className={`fixed top-0 left-0 w-full h-full bg-black opacity-50 ${isDrawerOpen ? 'block' : 'hidden'}`}
+                    onClick={toggleDrawer}
+                ></div>
+            </>
+        </div>
+
+
+
+    );
+};
+
+export default Navbar;
