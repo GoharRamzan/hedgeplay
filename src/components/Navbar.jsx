@@ -10,9 +10,9 @@ const Navbar = () => {
     };
     return (
         <div className='flex fixed top-0 left-0 z-50 w-full  h-[25vh]  items-center justify-between    text-white'>
-            <div className=' h-20 md:h-28 lg:h-2/3 w-[100%] md:w-[20%] lg:w-[10%] lg:ml-14 flex items-center justify-center backdrop-blur-md bg-white/10 border border-white/30 rounded-full p-4 shadow-lg '>
+            <div className=' h-20 md:h-28 lg:h-2/3 w-[100%] md:w-[20%] lg:w-[10%] lg:ml-14 flex items-center justify-between backdrop-blur-md bg-white/10 border border-white/30 rounded-full p-4 shadow-lg '>
                 <img src={logo} alt="Logo" className='h-20 ml-4 md:ml-0 lg:ml-0 md:h-24' />
-                <>
+               
                     {/* Hamburger Menu Icon */}
                     <div className="mr-3 md:hidden flex items-center justify-center">
                         <button onClick={toggleDrawer}>
@@ -20,7 +20,7 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                </>
+               
             </div>
             <div className='hidden md:flex w-[75%] h-full  ml-11 items-center space-x-6 text-lg '>
                 <span an className='h-6/12 w-[80%] rounded-4xl space-x-12  flex  items-center  bg-white '
