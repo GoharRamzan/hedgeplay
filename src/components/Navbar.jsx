@@ -23,7 +23,7 @@ const Navbar = () => {
                
             </div>
             <div className='hidden md:flex w-[75%] h-full  ml-11 items-center space-x-6 text-lg '>
-                <span an className='h-6/12 w-[80%] rounded-3xl space-x-12  flex  items-center  bg-white '
+                <span  className='h-6/12 w-[80%] rounded-3xl space-x-12  flex  items-center  bg-white '
                     style={{ boxShadow: '10px 10px 3px rgb(106, 106, 107)' }}
                 >
 
