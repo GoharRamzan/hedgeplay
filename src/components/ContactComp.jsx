@@ -3,6 +3,10 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 import image from '../assets/aboutimg.png';
+import { FaHome } from 'react-icons/fa';
+import { LiaCitySolid } from 'react-icons/lia';
+import { IoCall } from 'react-icons/io5';
+import { MdOutlineEmail } from 'react-icons/md';
 
 const ContactComp = () => {
     const sendEmail = async (e) => {
@@ -42,7 +46,7 @@ const ContactComp = () => {
             <div className="mt-[18vh] w-full">
                 <div className="w-full flex flex-col items-center mb-8">
                     <div
-                        className="w-full h-[25vh] md:h-[40vh] bg-fixed bg-center bg-cover"
+                        className="w-full h-[25vh] lg:h-[40vh] bg-fixed bg-center bg-cover"
                         style={{ backgroundImage: `url(${image})` }}
                     ></div>
 
@@ -51,7 +55,7 @@ const ContactComp = () => {
                     </button>
                 </div>
 
-                <div className="h-[85vh] flex flex-col lg:flex-row items-center gap-10">
+                <div className="h-auto flex flex-col lg:flex-row items-center  gap-10">
                     <div className="h-full w-full lg:w-1/2 flex justify-center">
                         <form
                             onSubmit={sendEmail}
@@ -101,26 +105,58 @@ const ContactComp = () => {
                         </form>
                     </div>
 
-                    <div className="w-full flex flex-col justify-center  px-5 lg:w-1/2">
+                    <div className="w-full flex flex-col justify-center items-center lg:items-start  px-5 lg:w-1/2">
                         <h2 className="text-white text-3xl md:text-4xl font-extrabold leading-snug mb-4">
                             Innovation in <br /> Every Trade
                         </h2>
-                        <p className="text-white text-xl md:text-lg leading-relaxed mt-5">
+                        <p className="text-white text-xl md:text-lg leading-relaxed mt-3">
                             We’d love to hear from you! Whether you have a question, feedback, or just want to learn
                             more about HedgePlay, feel free to reach out. Our team is always here to help and guide
                             you on your trading journey. Let’s connect and take the next step together
                         </p>
-                        <div className='w-full flex justify-center items-center'> 
-                            <div className='w-1/2 flex items-center justify-between'>
-                            
+                        <div className='w-full grid grid-cols-1 md:grid-cols-2 space-y-4 items-center  mt-6'>
+                            <div className=' flex  '>
+                                <span className='bg-[#727D9C] text-[#1A325E] h-20  p-5 rounded-full text-4xl flex items-center'>
+                                    <FaHome />
+                                </span>
+                                <span className='flex flex-col ml-2 '>
+                                    <h1 className='font-bold text-2xl'>Address</h1>
+                                    <h1 className=''>Nubit Software (Pvt.) Ltd
+                                        Suite # 208-209, 2nd Floor
+                                        New PSX Building, Stock Exchange Road</h1>
+                                </span>
                             </div>
-                            <div className='w-1/2 flex items-center justify-between'></div>
-                            
+                            <div className=' flex  '>
+                                <span className='bg-[#727D9C] text-[#1A325E] h-20  p-5 rounded-full text-4xl flex items-center'>
+                                <LiaCitySolid />
+                                </span>
+                                <span className='flex flex-col ml-2 '>
+                                    <h1 className='font-bold text-2xl'>City</h1>
+                                    <h1 className=''>Tower,Karachi</h1>
+                                </span>
+                            </div>
+                            <div className=' flex  '>
+                                <span className='bg-[#727D9C] text-[#1A325E] h-20  p-5 rounded-full text-4xl flex items-center'>
+                                <IoCall />
+                                </span>
+                                <span className='flex flex-col ml-2 '>
+                                    <h1 className='font-bold text-2xl'>Call Us</h1>
+                                    <h1 className=''>+92(21) 32428196-98</h1>
+                                </span>
+                            </div>
+                            <div className=' flex  '>
+                                <span className='bg-[#727D9C] text-[#1A325E] h-20  p-5 rounded-full text-4xl flex items-center'>
+                                <MdOutlineEmail />
+                                </span>
+                                <span className='flex flex-col ml-2 '>
+                                    <h1 className='font-bold text-2xl'>Email</h1>
+                                    <h1 className=''>info@nubitsoft.com</h1>
+                                </span>
+                            </div>
+
+
                         </div>
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
+
 
                     </div>
                 </div>
