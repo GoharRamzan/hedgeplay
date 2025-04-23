@@ -20,7 +20,7 @@ const AboutComp = () => {
                 </div>
 
                 {/* Main Section */}
-                <div className="h-[85vh] flex flex-col lg:flex-row items-center gap-10">
+                <div className="h-[85vh] flex flex-col lg:flex-row items-center  gap-10">
                     {/* Image Section */}
                     <div className="hidden  relative h-full w-full lg:w-1/2 md:flex justify-center left-14">
                         <div className='absolute h-2/3 w-[80%]  left-4  z-0'>
@@ -39,13 +39,17 @@ const AboutComp = () => {
                     </div>
 
                     {/* Text Section */}
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full flex flex-col justify-center items-center px-5   lg:w-1/2">
                         <h2 className="text-white text-3xl md:text-4xl font-extrabold leading-snug mb-4">
                             Innovation in <br /> Every Trade
                         </h2>
-                        <p className="text-white text-base md:text-lg leading-relaxed">
-                            HedgePlay is developed by Nubit Software (Pvt.) Ltd, a company dedicated to reshaping the digital trading experience.
-                            We specialize in building reliable, scalable, and secure platforms for traders of all levels.
+                        <p className="text-white  text-xl md:text-lg leading-relaxed mt-5">
+                        HedgePlay is developed by Nubit Software (Pvt.) Ltd, a forward-thinking technology company committed to
+                         transforming the digital trading landscape. With a focus on innovation and user-centric de
+                         sign, we aim to empower traders by providing intuitive, reliable, and secure trading solutions. Our platforms
+                          are built to scale, ensuring smooth performance whether you're a beginner exploring markets or a seasoned
+                           professional managing complex trades. At Nubit Software, we believe in creating technology that not only meets industry
+                         standards but sets new benchmarks for excellence in the world of digital finance.
                         </p>
                     </div>
                 </div>
