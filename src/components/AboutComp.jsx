@@ -23,12 +23,9 @@ const AboutComp = () => {
                 <div className="h-[85vh] flex flex-col lg:flex-row items-center gap-10">
                     {/* Image Section */}
                     <div className="hidden  relative h-full w-full lg:w-1/2 md:flex justify-center left-14">
-
-
                         <div className='absolute h-2/3 w-[80%]  left-4  z-0'>
                             <img src={about2} alt="the image is loading..... " className="w-full  object-contain" />
                         </div>
-
                         <div className="absolute  bg-[#1A325E] top-12 left-20  p-4 w-[80%] z-10  "
                             style={{
                                 boxShadow: '-20px -20px 10px rgb(216, 216, 214)',
