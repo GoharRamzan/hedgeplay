@@ -48,13 +48,13 @@ const Footer = () => {
                         <h4 className="text-am mb-6 text-white">Useful links</h4>
                         <ul className="space-y-4 pl-2">
                             <li>
-                                <Link to="/" className="text-gray-400 hover:text-white text-sm">Home</Link>
+                                <Link to="/" target='_top' className="text-gray-400 hover:text-white text-sm">Home</Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="text-gray-400 hover:text-white text-sm">Contact</Link>
+                                <Link to="/contact" target='_top' className="text-gray-400 hover:text-white text-sm">Contact</Link>
                             </li>
                             <li>
-                                <Link to="/article" className="text-gray-400 hover:text-white text-sm">Articles</Link>
+                                <Link to="/article" target='_top' className="text-gray-400 hover:text-white text-sm">Articles</Link>
                             </li>
                         </ul>
                     </div>
@@ -62,16 +62,16 @@ const Footer = () => {
                         <h4 className="text-am mb-6 text-white">Contact Info</h4>
                         <ul className="space-y-4 pl-2">
                             <li>
-                                <p  className="text-gray-400 hover:text-white text-sm">+92(21)32428196-98</p>
+                                <p className="text-gray-400 hover:text-white text-sm">+92(21)32428196-98</p>
                             </li>
                             <li>
-                                <p  className="text-gray-400 hover:text-white text-sm">Nubit Software (Pvt.) Ltd
-                                        Suite # 208-209, 2nd Floor
-                                        New PSX Building, Stock Exchange Road</p>
+                                <p className="text-gray-400 hover:text-white text-sm">Nubit Software (Pvt.) Ltd
+                                    Suite # 208-209, 2nd Floor
+                                    New PSX Building, Stock Exchange Road</p>
                             </li>
-                            
+
                             <li>
-                                <p  className="text-gray-400 hover:text-white text-sm">info@nubitsoft.com</p>
+                                <p className="text-gray-400 hover:text-white text-sm">info@nubitsoft.com</p>
                             </li>
                         </ul>
                     </div>
@@ -91,11 +91,11 @@ const Footer = () => {
                             <li>
                                 <Link to="https://nubitsoft.com" target='_blank' className="text-gray-400 hover:text-white text-sm flex gap-3 items-center">Powered By <img src="https://nubitsoft.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdcwai4hwc%2Fimage%2Fupload%2Fv1729575815%2Fnubitlogo_uu0waa.png&w=64&q=75" alt="Image is Loading....." /></Link>
                             </li>
-                           
+
 
                         </ul>
                     </div>
-                    
+
                 </div>
 
                 <p className="text-gray-400 text-sm mt-10">© HEDGEPLAY. All rights reserved.
