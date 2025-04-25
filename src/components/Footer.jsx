@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 pt-12 pb-6 px-10 tracking-wide">
             <div className="max-w-screen-xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                     <div className="lg:flex lg:items-center">
                         <Link to="https://trade-hub.com.pk/">
                             <img src={logo} alt="logo" className="w-36" />
@@ -44,17 +44,34 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div >
                         <h4 className="text-am mb-6 text-white">Useful links</h4>
                         <ul className="space-y-4 pl-2">
                             <li>
-                                <Link to="" className="text-gray-400 hover:text-white text-sm">Home</Link>
+                                <Link to="/" className="text-gray-400 hover:text-white text-sm">Home</Link>
                             </li>
                             <li>
-                                <Link to="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Contact</Link>
+                                <Link to="/contact" className="text-gray-400 hover:text-white text-sm">Contact</Link>
                             </li>
                             <li>
-                                <Link to="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Articles</Link>
+                                <Link to="/article" className="text-gray-400 hover:text-white text-sm">Articles</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h4 className="text-am mb-6 text-white">Contact Info</h4>
+                        <ul className="space-y-4 pl-2">
+                            <li>
+                                <p  className="text-gray-400 hover:text-white text-sm">+92(21)32428196-98</p>
+                            </li>
+                            <li>
+                                <p  className="text-gray-400 hover:text-white text-sm">Nubit Software (Pvt.) Ltd
+                                        Suite # 208-209, 2nd Floor
+                                        New PSX Building, Stock Exchange Road</p>
+                            </li>
+                            
+                            <li>
+                                <p  className="text-gray-400 hover:text-white text-sm">info@nubitsoft.com</p>
                             </li>
                         </ul>
                     </div>
@@ -71,10 +88,14 @@ const Footer = () => {
                             <li>
                                 <Link to="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
                             </li>
-
+                            <li>
+                                <Link to="https://nubitsoft.com" target='_blank' className="text-gray-400 hover:text-white text-sm flex gap-3 items-center">Powered By <img src="https://nubitsoft.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdcwai4hwc%2Fimage%2Fupload%2Fv1729575815%2Fnubitlogo_uu0waa.png&w=64&q=75" alt="Image is Loading....." /></Link>
+                            </li>
+                           
 
                         </ul>
                     </div>
+                    
                 </div>
 
                 <p className="text-gray-400 text-sm mt-10">© HEDGEPLAY. All rights reserved.

@@ -18,9 +18,9 @@ const Hero = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0  md:top-24 flex   items-center justify-center">
         <div className="text-center text-white px-4 w-[100%] md:w-[60%] overflow-hidden flex flex-col">
-          <h1 className="hidden sm:block text-5xl font-bold mb-4 leading-14 ">Smart&nbsp;<span className='bg-[#1A325E] rounded-xl  px-2'>Web</span>&nbsp;Based <br /> Hedging App</h1>
+          <h1 className="hidden sm:block text-5xl font-bold mb-4 leading-14 ">Smart&nbsp;<span className='bg-[#1A325E] rounded-xl  px-2'>Web</span>&nbsp;Based <br /> Hedging </h1>
           {/* this is for mobile */}
-          <h1 className="block sm:hidden text-4xl  font-bold mb-4  ">Smart&nbsp;<span className='bg-[#1A325E] rounded-xl  px-2'>Server</span>&nbsp;<br /> Based Hedging App</h1>
+          <h1 className="block sm:hidden text-4xl  font-bold mb-4  ">Smart&nbsp;<span className='bg-[#1A325E] rounded-xl  px-2'>Server</span>&nbsp;<br /> Based Hedging </h1>
           {/* //// */}
           <p className="text-lg md:text-xl mb-6 ">Stay Ahead. Trade smarter. Hedge your way to success.</p>
         

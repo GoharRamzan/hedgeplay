@@ -30,7 +30,7 @@ const Navbar = () => {
                     <Link to="/" className='w-[15%] lg:w-[12%] h-12  rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200 ml-9 lg:ml-16'>Home</Link>
                     <Link to="/about" className='w-[15%] lg:w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'>About</Link>
                     <Link to="/contact" className='w-[15%] lg:w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'> Contact </Link>
-                    <Link to="/contact" className='w-[15%] lg:w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'> Articles </Link>
+                    <Link to="/article" className='w-[15%] lg:w-[12%] h-12 rounded-3xl bg-[#1A325E] flex items-center justify-center hover:bg-amber-600 transition duration-200'> Articles </Link>
 
                 </span>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
                             Contact
                         </Link>
                         <Link
-                            to="/contact"
+                            to="/article"
                             className='w-[90%] h-12 rounded-xl bg-[#a9a9b9] flex items-center justify-center hover:bg-amber-800 transition duration-200 hover:scale-105'
                             onClick={toggleDrawer}
                         >
